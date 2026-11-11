@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8c8dc; /* Rosa suave */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4a2c3a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+.contenedor {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 40px 50px;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.foto-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.foto {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.nombre {
+    font-size: 2rem;
+    color: #8b2f5a;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.subtitulo {
+    font-size: 1.1rem;
+    color: #a04a72;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 40px; /* Dos espacios visuales */
+}
+
+.seccion {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.seccion h3 {
+    font-size: 1.2rem;
+    color: #8b2f5a;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.seccion p {
+    font-size: 1rem;
+    color: #4a2c3a;
+    line-height: 1.6;
+}
+
+/* Responsive para móviles */
+@media (max-width: 500px) {
+    .contenedor {
+        padding: 30px 20px;
+    }
+
+    .nombre {
+        font-size: 1.5rem;
+    }
+
+    .subtitulo {
+        font-size: 0.95rem;
+    }
+
+    .foto {
+        width: 130px;
+        height: 130px;
+    }
+}
